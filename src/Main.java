@@ -10,7 +10,6 @@ public class Main {
         //Populating Queue and initializing the hash map.
 
         Services services = new Services();
-        boolean flag = false;
         Queue<Processes> processesQueue = services.populateAndSortQueue();
         HashMap<Integer, Integer> sharedResource = services.populateMap();
         Queue<Processes> processesQueueCopy = processesQueue;
@@ -21,6 +20,9 @@ public class Main {
         Threads thread3 = new Threads(sharedResource, processesQueueCopy);
         Threads thread4 = new Threads(sharedResource, processesQueueCopy);
 
+        System.out.println("\n***********************************************************************************************************");
+        System.out.println("\t\t\t\t\t\tThread LIST DISPLAY ");
+        System.out.println("***********************************************************************************************************");
 
 
         thread1.start();

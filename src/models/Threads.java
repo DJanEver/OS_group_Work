@@ -41,7 +41,7 @@ public class Threads extends java.lang.Thread {
 
     public void run(){
         synchronized (processesQueue){
-            System.out.println("The current thread ->: " + Thread.currentThread().getName());
+            System.out.println("\n\n\nThe current thread ->: " + Thread.currentThread().getName());
             for(int i =0; i < 5; i++){
                 Processes temp = processesQueue.remove();
                 temp.getTask().selectRanTask(sharedResource);

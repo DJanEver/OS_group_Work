@@ -40,6 +40,8 @@ public class Services {
         ArrayList<Processes> processesArrayList = new ArrayList<>(Arrays.asList(tempArray));
         return new LinkedList<>(processesArrayList);
     }
+
+
 }
 
 //Calculating the completion time
