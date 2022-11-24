@@ -20,8 +20,9 @@ public class Main {
         Threads thread3 = new Threads(sharedResource, processesQueueCopy);
         Threads thread4 = new Threads(sharedResource, processesQueueCopy);
 
-        System.out.println("\n***********************************************************************************************************");
-        System.out.println("\t\t\t\t\t\tThread LIST DISPLAY ");
+
+        System.out.println("\n\n\n\n***********************************************************************************************************");
+        System.out.println("\t\t\t\t\t\tThread 0 LIST DISPLAY ");
         System.out.println("***********************************************************************************************************");
 
 
@@ -34,6 +35,10 @@ public class Main {
         }
 
 
+
+        System.out.println("\n\n\n\n***********************************************************************************************************");
+        System.out.println("\t\t\t\t\t\tThread 1 LIST DISPLAY ");
+        System.out.println("***********************************************************************************************************");
         thread2.start();
         try {
             thread2.join();
@@ -42,6 +47,9 @@ public class Main {
             System.out.println("Interrupted");
         }
 
+        System.out.println("\n\n\n\n***********************************************************************************************************");
+        System.out.println("\t\t\t\t\t\tThread 2 LIST DISPLAY ");
+        System.out.println("***********************************************************************************************************");
         thread3.start();
         try {
             thread3.join();
@@ -50,6 +58,10 @@ public class Main {
             System.out.println("Interrupted");
         }
 
+
+        System.out.println("\n\n\n\n***********************************************************************************************************");
+        System.out.println("\t\t\t\t\t\tThread 3 LIST DISPLAY ");
+        System.out.println("***********************************************************************************************************");
         thread4.start();
         try {
             thread4.join();

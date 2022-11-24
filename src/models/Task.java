@@ -15,7 +15,7 @@ public class Task {
             System.out.println("Thread  interrupted.");
         }
         // Displaying the HashMap
-        System.out.println("Add record method was called -> Current map " + sharedResource + "\n");
+        System.out.println("Add record task was called -> Current map " + sharedResource + "\n");
     }
 
     public void removeRecord(HashMap<Integer, Integer> sharedResource){
@@ -27,7 +27,7 @@ public class Task {
             System.out.println("Thread  interrupted.");
         }
         // Displaying the HashMap
-        System.out.println("Remove record method was called -> Current map " + sharedResource + "\n");
+        System.out.println("Remove record task was called -> Current map " + sharedResource + "\n");
     }
 
     public void retrieveRecord(HashMap<Integer, Integer> sharedResource){
@@ -40,7 +40,7 @@ public class Task {
             System.out.println("Thread  interrupted.");
         }
         // Displaying the HashMap
-        System.out.println("Retrieve record method was called Current map: " + sharedResource + "\n");
+        System.out.println("Retrieve record task was called Current map: " + sharedResource + "\n");
     }
 
     public void calculateRecord(HashMap<Integer, Integer> sharedResource){
@@ -53,7 +53,7 @@ public class Task {
             System.out.println("Thread  interrupted.");
         }
         // Displaying the HashMap
-        System.out.println("Calculate record method was called Current map: " + sharedResource + "\n");
+        System.out.println("Calculate record task was called Current map: " + sharedResource + "\n");
     }
 
     public void selectRanTask(HashMap<Integer, Integer> sharedResource){

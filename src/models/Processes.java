@@ -78,6 +78,18 @@ public class Processes {
         this.burstTime = burstTime;
     }
 
+    @Override
+    public String toString() {
+        return "Processes{" +
+                "PID=" + PID +
+                ", task=" + task +
+                ", priority=" + priority +
+                ", arrivalTime=" + arrivalTime +
+                ", blockedTime=" + blockedTime +
+                ", burstTime=" + burstTime +
+                '}';
+    }
+
     //   public void addEle(ArrayList<Integer> numbers) {
 //
 //            int b = (int)(Math.random()*(100-50+1)+50);
